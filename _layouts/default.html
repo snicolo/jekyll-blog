@@ -1,0 +1,62 @@
+{% include header.html %}
+
+<nav class="blue darken-4">
+  <div class="top-nav">
+      <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+    <a href="/" class="brand-logo center">GDG Reggio Calabria</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+  
+    </ul>
+  
+    <ul id="slide-out" class="side-nav">
+        <li><div class="user-view">
+          <div class="background center">
+            <img src="assets/images/logo.png">
+          </div>
+          <a href="/"><span class="text email">GDG Reggio Calabria</span></a>
+          <a href="/about"><span class="text name">About</span></a>
+          <a href="/contatti"><span class="text email">Contatti</span></a>
+        </div></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">Follow US</a></li>
+        <li><a class="fa fa-facebook-official fa-2x" href="#!"> Facebook</a></li>
+        <li><a class="fa fa-twitter fa-2x" href="#!"> Twitter</a></li>
+        <li><a class="fa fa-instagram fa-2x" href="#!"> Instagram</a></li>
+        <li><a class="fa fa-meetup fa-2x" href="#!"> Meetup</a></li>
+        <li><a class="fa fa-paper-plane fa-2x" href="#!"> Telegram</a></li>
+      </ul>
+      
+</div>
+
+</nav>
+
+   
+<div class="container">
+    {{ content }} 
+</div>
+
+<footer class="page-footer blue darken-4">
+ <div class="container">
+   <div class="row">
+     <div class="col l6 s12">
+       <h5 class="white-text"> {{ site.title }} </h5>
+       <p class="grey-text text-lighten-4"> {{ site.description }} </p>
+     </div>
+     <div class="col l4 offset-l2 s12">
+       <h5 class="white-text">Links</h5>
+       <ul>
+         <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+         <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+       </ul>
+     </div>
+   </div>
+ </div>
+ <div class="footer-copyright">
+   <div class="container">
+   © 2014 Copyright {{ site.name }} | All rights reserved.
+   </div>
+ </div>
+ 
+</footer>
+
+{% include footer.html %}
